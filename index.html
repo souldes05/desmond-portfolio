@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desmond Tutu | Data Analyst & CRM Specialist</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0b0f19;
+      color: #f9fafb;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      padding: 25px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0b0f19;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #1f2937;
+    }
+
+    header h2 {
+      color: #38bdf8;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: #d1d5db;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .hero-text {
+      max-width: 700px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+      padding: 8px 14px;
+      border-radius: 30px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      color: #d1d5db;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin-right: 12px;
+      margin-bottom: 12px;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .primary {
+      background: #38bdf8;
+      color: #020617;
+    }
+
+    .secondary {
+      border: 1px solid #38bdf8;
+      color: #38bdf8;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      margin-top: 35px;
+    }
+
+    .card {
+      background: #111827;
+      padding: 25px;
+      border-radius: 16px;
+      border: 1px solid #1f2937;
+    }
+
+    .card:hover {
+      border-color: #38bdf8;
+    }
+
+    .card h3 {
+      color: #38bdf8;
+      margin-bottom: 12px;
+    }
+
+    .card p, li {
+      color: #d1d5db;
+      font-size: 15px;
+    }
+
+    h2.section-title {
+      font-size: 34px;
+      margin-bottom: 15px;
+      color: #ffffff;
+    }
+
+    .section-subtitle {
+      color: #9ca3af;
+      max-width: 750px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-top: 12px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #1f2937;
+      color: #e5e7eb;
+      padding: 9px 13px;
+      border-radius: 8px;
+      margin: 6px;
+      font-size: 14px;
+    }
+
+    .experience-item {
+      background: #111827;
+      border-left: 4px solid #38bdf8;
+      padding: 25px;
+      border-radius: 10px;
+      margin-top: 25px;
+    }
+
+    .experience-item h3 {
+      color: #38bdf8;
+    }
+
+    .experience-item small {
+      color: #9ca3af;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #020617;
+      color: #9ca3af;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 15px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 10px 6px 0;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: left;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2>Desmond Tutu</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <span class="badge">Data • CRM • Automation • Business Operations</span>
+      <h1>Hi, I’m <span>Desmond Tutu</span></h1>
+      <p>
+        I am a Data Science graduate, CRM Specialist, and Business Operations professional based in Nairobi, Kenya.
+        I build data-driven solutions, CRM workflows, automation systems, websites, dashboards, and business tools
+        that help organizations improve performance and make better decisions.
+      </p>
+
+      <div class="buttons">
+        <a class="primary" href="#projects">View My Projects</a>
+        <a class="secondary" href="#contact">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-subtitle">
+      I combine Data Analytics, CRM systems, automation, customer support, and business operations.
+      My background includes Data Science training, CRM support, WordPress website work, customer service,
+      virtual assistance, and business process improvement.
+    </p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3>Data Analytics</h3>
+        <p>
+          Skilled in Python, SQL, Excel, machine learning, data cleaning, visualization, dashboards,
+          and predictive modeling.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>CRM & Automation</h3>
+        <p>
+          Experience with GoHighLevel, WordPress, ClickUp, Shopify, Google Workspace, workflow design,
+          lead management, and customer follow-up systems.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Business Operations</h3>
+        <p>
+          Experienced in scheduling, client communication, reporting, research, documentation,
+          customer support, and process coordination.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <p class="section-subtitle">Tools and technologies I use across data, CRM, automation, and operations.</p>
+
+    <div class="skills">
+      <span>Python</span>
+      <span>SQL</span>
+      <span>Excel</span>
+      <span>Pandas</span>
+      <span>NumPy</span>
+      <span>Scikit-learn</span>
+      <span>Machine Learning</span>
+      <span>FastAPI</span>
+      <span>Streamlit</span>
+      <span>Docker</span>
+      <span>Git</span>
+      <span>GitHub</span>
+      <span>Power BI</span>
+      <span>Tableau</span>
+      <span>GoHighLevel</span>
+      <span>WordPress</span>
+      <span>Shopify</span>
+      <span>ClickUp</span>
+      <span>Google Workspace</span>
+      <span>CRM Management</span>
+      <span>Customer Support</span>
+      <span>Operations Support</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-subtitle">
+      These projects show my ability to work with data, machine learning, automation, CRM systems, and business websites.
+    </p>
+
+    <div class="card-grid">
+
+      <div class="card">
+        <h3>Customer Churn Prediction</h3>
+        <p>
+          Built an end-to-end machine learning project that predicts customer churn using Python,
+          Scikit-learn, FastAPI, Streamlit, and Docker.
+        </p>
+        <ul>
+          <li>Data cleaning and feature engineering</li>
+          <li>Logistic Regression model</li>
+          <li>FastAPI prediction endpoint</li>
+          <li>Streamlit frontend</li>
+          <li>Dockerized deployment structure</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Financial Inclusion Prediction</h3>
+        <p>
+          Created a machine learning model to predict financial inclusion using African financial data.
+        </p>
+        <ul>
+          <li>Random Forest model</li>
+          <li>Feature engineering</li>
+          <li>Model evaluation</li>
+          <li>Streamlit app interface</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>EV Price Prediction</h3>
+        <p>
+          Developed a regression model to predict electric vehicle prices using machine learning techniques.
+        </p>
+        <ul>
+          <li>Support Vector Regression</li>
+          <li>Data preprocessing</li>
+          <li>Model evaluation using R² and RMSE</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>CRM Automation System</h3>
+        <p>
+          Designed CRM workflows for lead capture, automated follow-ups, appointment scheduling,
+          customer communication, and pipeline management.
+        </p>
+        <ul>
+          <li>GoHighLevel workflows</li>
+          <li>Lead management</li>
+          <li>Automated email follow-ups</li>
+          <li>Google Sheets integration</li>
+          <li>ClickUp task organization</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Verve Vista Atelier Website</h3>
+        <p>
+          Worked on the website structure for Verve Vista Atelier, a brand covering events and tours in Kenya.
+        </p>
+        <ul>
+          <li>WordPress website setup</li>
+          <li>Responsive page layout</li>
+          <li>WhatsApp contact integration</li>
+          <li>Tour and events service structure</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Web Scraping & Automation</h3>
+        <p>
+          Built automation scripts for collecting, cleaning, organizing, and analyzing online data.
+        </p>
+        <ul>
+          <li>Python web scraping</li>
+          <li>BeautifulSoup</li>
+          <li>Selenium</li>
+          <li>Data cleaning</li>
+          <li>Spreadsheet organization</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2 class="section-title">Experience</h2>
+
+    <div class="experience-item">
+      <h3>Operations Support — Joyland Kitchen</h3>
+      <small>Nairobi, Kenya</small>
+      <p>
+        Supported business operations, client communication, scheduling, event coordination,
+        reports, order tracking, invoices, proposals, and customer communication.
+      </p>
+    </div>
+
+    <div class="experience-item">
+      <h3>Sales Representative — Proactiv</h3>
+      <small>Customer Outreach & Appointment Booking</small>
+      <p>
+        Handled outbound calls, referral marketing, appointment booking, customer follow-up,
+        and client communication.
+      </p>
+    </div>
+
+    <div class="experience-item">
+      <h3>Executive Virtual Assistant — Bendelicacies</h3>
+      <small>Remote Administrative Support</small>
+      <p>
+        Managed records, emails, research, scheduling, reports, and business support tasks
+        with a strong focus on organization and accuracy.
+      </p>
+    </div>
+
+    <div class="experience-item">
+      <h3>Customer Service Representative — Autumn Solutions</h3>
+      <small>Remote Customer Support</small>
+      <p>
+        Supported customers through email and digital communication while maintaining service quality,
+        response speed, and issue resolution.
+      </p>
+    </div>
+
+    <div class="experience-item">
+      <h3>CRM & Business Systems Support — Wanzia / Freelance</h3>
+      <small>CRM, Automation & Web Tools</small>
+      <p>
+        Worked with CRM platforms, WordPress, GoHighLevel, ClickUp, Shopify, ClickSites,
+        Google Workspace, and automation tools to support business workflows and digital operations.
+      </p>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2 class="section-title">Certifications & Education</h2>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3>Diploma in Data Science</h3>
+        <p>GOMYCODE Nairobi — Python, SQL, Machine Learning, Data Analysis, Visualization, and AI projects.</p>
+      </div>
+
+      <div class="card">
+        <h3>Google Data Analytics Certificate</h3>
+        <p>Training in data cleaning, analysis, visualization, spreadsheets, SQL, and business insights.</p>
+      </div>
+
+      <div class="card">
+        <h3>IBM Data Science Certificate</h3>
+        <p>Training in Python, data science workflows, machine learning, and applied analytics.</p>
+      </div>
+
+      <div class="card">
+        <h3>ALX Virtual Assistant Certificate</h3>
+        <p>Training in administrative support, scheduling, customer communication, documentation, and productivity tools.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p class="section-subtitle">
+      I am open to Data Analyst, CRM Specialist, Business Systems, Operations Analyst,
+      Customer Support, and Automation roles.
+    </p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3>Email</h3>
+        <p>destutu2005@gmail.com</p>
+      </div>
+
+      <div class="card">
+        <h3>Location</h3>
+        <p>Nairobi, Kenya</p>
+      </div>
+
+      <div class="card">
+        <h3>LinkedIn</h3>
+        <p>
+          <a href="https://www.linkedin.com/in/desmond-tutu-" target="_blank">
+            linkedin.com/in/desmond-tutu-
+          </a>
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>GitHub</h3>
+        <p>
+          <a href="https://github.com/souldes05" target="_blank">
+            github.com/souldes05
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Desmond Tutu. Built with HTML, CSS, and GitHub Pages.</p>
+  </footer>
+
+</body>
+</html>
